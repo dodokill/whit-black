@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Fundo!</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            margin-top: 30vw;
+            color: chartreuse;
+            background-color: aliceblue;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Trocar" onclick="trocarFundo()">
+    
+    <script>
+        function trocarFundo(){
+            const fundo = document.body.style.backgroundColor;
+
+            if (fundo == 'white'){
+                document.body.style.background = "black";
+            }else{
+                document.body.style.background = "white";
+            }
+        }
+        
+    </script>
+</body>
+</html>
